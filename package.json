@@ -1,11 +1,19 @@
 {
   "name": "pokechat",
   "scripts": {
-    "build": "browserify app.js > build.js -t [ babelify --presets [ es2015 react ] ]"
+    "build": "browserify app.js > public/app.js -t [ babelify --presets [ es2015 react ] ]",
+    "start": "babel-node index.js --presets es2015"
   },
   "dependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.8.0",
+    "babel-core": "^6.8.0",
+    "express": "^4.13.4",
     "react": "^0.14.7",
+    "react-addons-css-transition-group": "^15.0.2",
     "react-dom": "^0.14.7",
+    "socket.io": "^1.4.6",
+    "socket.io-client": "^1.4.6",
     "uid": "0.0.2"
   },
   "devDependencies": {
