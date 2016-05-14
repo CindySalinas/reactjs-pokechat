@@ -1,5 +1,6 @@
 {
   "name": "pokechat",
+  "version": "1.0.0",
   "scripts": {
     "build": "browserify app.js > public/app.js -t [ babelify --presets [ es2015 react ] ]",
     "start": "babel-node index.js --presets es2015"
